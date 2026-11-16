@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CampusTask</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>📚 Dashboard CampusTask</h1>
+    <p>Yuk, kelola tugas kuliahmu!</p>
+
+    <h2>Tambah Tugas Baru</h2>
+
+   
+<input type="text" id="namaTugas"
+       placeholder="Masukkan nama tugas">
+
+<br><br>
+
+<label for="deadline">Deadline Tugas:</label>
+<input type="date" id="deadline">
+
+<br><br>
+
+<label for="prioritas">Prioritas:</label>
+<select id="prioritas">
+    <option value="Tinggi">Tinggi</option>
+    <option value="Sedang">Sedang</option>
+    <option value="Rendah">Rendah</option>
+</select>
+
+<br><br>
+
+<button id="tambahTugas">Tambah Tugas</button>
+
+    <h2>Daftar Tugas Kamu</h2>
+
+<div class="statistik">
+    <div class="kotak-statistik">
+        <h3 id="totalTugas">0</h3>
+        <p>Total Tugas</p>
+    </div>
+
+    <div class="kotak-statistik">
+        <h3 id="tugasSelesai">0</h3>
+        <p>Selesai</p>
+    </div>
+
+    <div class="kotak-statistik">
+        <h3 id="tugasBelum">0</h3>
+        <p>Belum Selesai</p>
+    </div>
+</div>
+
+    <ul id="daftarTugas"></ul>
+</body>
+</html>

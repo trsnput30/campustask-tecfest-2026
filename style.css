@@ -1,0 +1,184 @@
+/* Mengatur seluruh halaman */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #fff0f5;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* Mengatur judul */
+h1 {
+	color: #d63384;
+	font-size: 36px;
+	margin-top: 150px;
+}
+
+/* Mengatur deskripsi */
+p {
+	color: #555555;
+	font-size: 18px;
+}
+
+/* Mengatur tombol */
+button {
+	background-color: #ff69b4;
+	color: white;
+	border: none;
+	padding: 15px 30px;
+	font-size: 16px;
+	border-radius: 12px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+/* Efek ketika mouse diarahkan ke tombol */
+button:hover {
+	background-color: #d63384;
+}
+
+/* Mengatur kolom input */
+input {
+    padding: 14px;
+    width: 300px;
+    max-width: 80%;
+    border: 2px solid #ffb6d9;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Merapikan daftar tugas */
+#daftarTugas {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+/* Mempercantik setiap tugas */
+#daftarTugas li {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid #ffc0dc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+/* Mempercantik pilihan prioritas */
+select {
+    padding: 14px;
+    border: 2px solid #ffb6d9;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Mengatur tulisan label */
+label {
+    color: #555555;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Tombol aksi dalam daftar tugas */
+#daftarTugas button {
+    padding: 10px 16px;
+    margin: 12px 8px 0 0;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+
+/* Mengatur ukuran semua elemen */
+* {
+    box-sizing: border-box;
+}
+
+/* Membuat judul dashboard lebih rapi */
+body:has(#daftarTugas) h1 {
+    margin-top: 45px;
+}
+
+/* Merapikan bagian input dashboard */
+body:has(#daftarTugas) input {
+    max-width: 90%;
+}
+
+/* Menambahkan jarak pada daftar tugas */
+#daftarTugas {
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+/* Mempercantik kartu tugas */
+#daftarTugas li {
+    background-color: #ffffff;
+    padding: 22px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid #ffc0dc;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.08);
+    line-height: 1.6;
+}
+
+/* Mempercantik tombol dalam daftar */
+#daftarTugas button {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+/* Tampilan pada layar HP */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    #daftarTugas {
+        width: 92%;
+    }
+
+    #daftarTugas li {
+        padding: 15px;
+    }
+}
+
+
+/* Container statistik */
+.statistik {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 850px;
+}
+
+/* Setiap kotak statistik */
+.kotak-statistik {
+    background-color: white;
+    border: 1px solid #ffc0dc;
+    border-radius: 15px;
+    padding: 15px 25px;
+    min-width: 170px;
+    box-shadow: 0 4px 12px rgba(214, 51, 132, 0.08);
+}
+
+.kotak-statistik h3 {
+    color: #d63384;
+    font-size: 30px;
+    margin: 8px 0;
+}
+
+.kotak-statistik p {
+    font-size: 15px;
+    margin: 5px 0;
+}
